@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <RvdH_GroupChange>
+      <active>true</active>
+      <codePool>local</codePool>
+    </RvdH_GroupChange>
+  </modules>
+</config>

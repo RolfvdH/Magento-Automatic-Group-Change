@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+
+  <modules>
+    <RvdH_GroupChange>
+      <version>0.1.0</version>
+    </RvdH_GroupChange>
+  </modules>
+
+  <global>
+    <models>
+      <RvdH_GroupChange>
+        <class>RvdH_GroupChange_Model</class>
+        <resourceModel>module_mysql4</resourceModel>
+      </RvdH_GroupChange>
+    </models>
+    <events>
+      <sales_order_place_after>
+        <observers>
+            <RvdH_GroupChange>
+                <class>RvdH_GroupChange_Model_Observer</class>
+                <method>changeGroup</method>
+            </RvdH_GroupChange>
+        </observers>
+    </sales_order_place_after>
+    </events>
+  </global>
+</config> 
+
